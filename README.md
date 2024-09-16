@@ -52,6 +52,11 @@ Cluster Autoscaler will ensure the EKS cluster scales based on resource demand. 
 
 autoscaler.tf – Kubernetes Cluster Autoscaler Configuration
 
-Variables for EKS (eks_variables.tf)
+#### Variables for EKS (eks_variables.tf)
+Summary of Files:
+eks.tf: Provisions the EKS cluster using the official EKS Terraform module.
+eks_node_group.tf: Defines EC2-based managed node groups for the EKS cluster.
+autoscaler.tf: Configures Kubernetes Cluster Autoscaler for autoscaling based on load, with the appropriate IAM policies.
+These configurations set up an EKS cluster that scales across multiple Availability Zones, ensuring high availability and efficient resource management.
 
 
