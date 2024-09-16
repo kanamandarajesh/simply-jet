@@ -34,5 +34,8 @@ iam_roles.tf – Define IAM Roles for EKS and S3
 # 2. KMS Configuration
 The KMS (Key Management Service) setup will provide encryption for data at rest in S3 and EBS volumes.
 ## kms.tf – Define KMS for S3 and EBS Encryption
+Usage of KMS Key for EBS and S3 Encryption
+In our EBS volume or S3 configuration, mentioned in that .tf file for reference.
+
 
 
