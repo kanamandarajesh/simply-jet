@@ -42,5 +42,10 @@ We'll use the official AWS EKS Terraform module to provision the EKS cluster. Th
 
 eks.tf – Define the EKS Cluster with Multi-AZ Deployment
 
+2. EKS Node Group Configuration
+Here, we define the managed node group across multiple AZs with EC2-based nodes.
+
+eks_node_group.tf – EC2 Managed Node Groups Across AZs
+
 
 
