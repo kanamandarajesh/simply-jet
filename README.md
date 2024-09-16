@@ -52,4 +52,6 @@ Cluster Autoscaler will ensure the EKS cluster scales based on resource demand. 
 
 autoscaler.tf – Kubernetes Cluster Autoscaler Configuration
 
+Variables for EKS (eks_variables.tf)
+
 
