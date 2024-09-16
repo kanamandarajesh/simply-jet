@@ -37,5 +37,10 @@ The KMS (Key Management Service) setup will provide encryption for data at rest 
 Usage of KMS Key for EBS and S3 Encryption
 In our EBS volume or S3 configuration, mentioned in that .tf file for reference.
 
+# c. EKS Cluster Configuration
+We'll use the official AWS EKS Terraform module to provision the EKS cluster. The cluster will be deployed across multiple AZs for high availability.
+
+eks.tf – Define the EKS Cluster with Multi-AZ Deployment
+
 
 
