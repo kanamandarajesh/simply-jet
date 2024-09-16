@@ -16,3 +16,6 @@ route_tables.tf – Define Route Tables for public and private subnets
 # 5. Security Groups
 
 security_groups.tf – Define Security Groups
+
+# 6. Route 53 Integration
+route_53.tf – Set up Route 53 for DNS Management
