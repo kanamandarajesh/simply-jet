@@ -43,3 +43,33 @@ resource "aws_kms_alias" "alias" {
   name          = "alias/ebs-s3-key"
   target_key_id = aws_kms_key.ebs_s3_key.key_id
 }
+# below is for EBS
+resource "aws_ebs_volume" "db_volume" {
+  availability_zone = var.availability_zone
+  size              = 100
+  encrypted         = true
+  kms_key_id        = aws_kms_key.ebs_s3_key.arn
+  
+  tags = {
+    Name = "db-volume"
+  }
+}
+# below is for s3
+resource "aws_s3_bucket" "backup_bucket" {
+  bucket = var.s3_bucket_name
+  
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm     = "aws:kms"
+        kms_master_key_id = aws_kms_key.ebs_s3_key.arn
+      }
+    }
+  }
+  
+  tags = {
+    Name = "backup-bucket"
+  }
+}
+
+
