@@ -47,5 +47,9 @@ Here, we define the managed node group across multiple AZs with EC2-based nodes.
 
 eks_node_group.tf – EC2 Managed Node Groups Across AZs
 
+3. Cluster Autoscaler
+Cluster Autoscaler will ensure the EKS cluster scales based on resource demand. You'll need to deploy the Cluster Autoscaler as a Helm chart within the EKS cluster and attach necessary permissions using IAM.
+
+autoscaler.tf – Kubernetes Cluster Autoscaler Configuration
 
 
