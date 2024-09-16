@@ -12,3 +12,7 @@ nat_gateway.tf – Create NAT Gateways for private subnets to access the interne
 
 # 4. Route Tables
 route_tables.tf – Define Route Tables for public and private subnets
+
+# 5. Security Groups
+
+security_groups.tf – Define Security Groups
