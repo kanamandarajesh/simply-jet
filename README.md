@@ -63,5 +63,7 @@ These configurations set up an EKS cluster that scales across multiple Availabil
 
 1. ebs.tf: Creating EBS Volumes
 In this configuration, we are creating EBS volumes to persist data for PostgreSQL and Redis.
+2. s3_buckets.tf: Creating S3 Buckets for Object Storage
+Here’s how to define an S3 bucket for application data, with versioning and lifecycle rules.
 
 
