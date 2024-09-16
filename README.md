@@ -59,4 +59,9 @@ eks_node_group.tf: Defines EC2-based managed node groups for the EKS cluster.
 autoscaler.tf: Configures Kubernetes Cluster Autoscaler for autoscaling based on load, with the appropriate IAM policies.
 These configurations set up an EKS cluster that scales across multiple Availability Zones, ensuring high availability and efficient resource management.
 
+# Here is an example of how you can define Terraform configurations for EBS volumes and S3 buckets with IAM roles and policies to restrict access from EKS pods:
+
+1. ebs.tf: Creating EBS Volumes
+In this configuration, we are creating EBS volumes to persist data for PostgreSQL and Redis.
+
 
