@@ -19,3 +19,5 @@ security_groups.tf – Define Security Groups
 
 # 6. Route 53 Integration
 route_53.tf – Set up Route 53 for DNS Management
+##  Variables (variables.tf) for Route 53
+
