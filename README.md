@@ -22,3 +22,10 @@ security_groups.tf – Define Security Groups
 route_53.tf – Set up Route 53 for DNS Management
 ###  Variables (route53_variables.tf) for Route 53
 
+
+# Here are the Terraform configurations for defining IAM roles for EKS and S3 access, as well as enabling KMS for encryption of data at rest in S3 and EBS.
+
+## 1. IAM Roles for EKS and S3
+The IAM roles will provide necessary permissions for the EKS cluster and pods to access AWS services like S3.
+iam_roles.tf – Define IAM Roles for EKS and S3
+
