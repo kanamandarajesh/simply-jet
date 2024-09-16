@@ -29,3 +29,6 @@ route_53.tf – Set up Route 53 for DNS Management
 The IAM roles will provide necessary permissions for the EKS cluster and pods to access AWS services like S3.
 iam_roles.tf – Define IAM Roles for EKS and S3
 
+## Variables for IAM Roles (iam_variables.tf)
+
+
